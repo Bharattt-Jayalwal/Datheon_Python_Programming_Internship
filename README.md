@@ -1,51 +1,42 @@
-
-# Student Investment Portfolio Tracker
+# Automated File Organizer & Cleanup Utility
 
 ## Project Overview
-A Python-based investment portfolio tracking
-application that helps students monitor their
-stock investments and calculate portfolio performance.
+A Python-based desktop automation utility that automatically organizes cluttered directories by identifying file extensions and moving files into categorized folders.
 
 ## Features
-- Add stock ticker symbols.
-- Enter purchase prices and quantities.
-- Retrieve latest available stock prices.
-- Calculate total invested capital.
-- Calculate current market valuation.
-- Calculate individual stock profit and loss.
-- Calculate overall portfolio returns.
-- Automatically save reports to CSV files.
+- Automatically identifies file types.
+- Creates category folders dynamically.
+- Organizes documents, images, videos, archives, and code files.
+- Handles duplicate filenames without overwriting.
+- Handles permission errors and file operation exceptions.
+- Maintains an execution log.
+- Displays a formatted organization summary.
 
 ## Technologies Used
 - Python 3
-- CSV Module
-- File Handling
-- Dictionary Data Structures
-- yfinance
-- DateTime Module
+- OS Module
+- Shutil Module
+- Pathlib
+- Logging
 
-## Installation
+## How to Run
 
-Install the required library:
+1. Install Python 3.
+2. Download or clone this project.
+3. Open the project folder in VS Code.
+4. Run:
 
-pip install -r requirements.txt
+```bash
+py organizer.py
+```
 
-## Run the Application
+5. Enter the directory path you want to organize.
 
-py portfolio.py
-
-## Output
-The application automatically generates:
-
-portfolio_summary.csv
-
-## Project Structure
-
-Student_Portfolio_Tracker/
-- portfolio.py
-- portfolio_summary.csv
-- requirements.txt
-- README.md
+## Output Files
+- `organizer.py` – Main automation script.
+- `organizer.log` – Execution history generated automatically.
 
 ## Developed For
-Python Programming Internship
+Datheon Python Programming Internship
+
+**Project:** Automated File Organizer & Cleanup Utility
